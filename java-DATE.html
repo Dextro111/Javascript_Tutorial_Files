@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EVERYTHING ABOUT DATE </title>
+        <script type="text/javascript"></script>
+    </head>
+
+    <body>
+        <script>
+            var today = Date()
+            document.write("Today is:" + today + "<br/>");
+
+            var todate = new Date("July 8, 2007 16:32:61")
+            document.write("Date: " + todate.getDate() + "<br/>")  
+            document.write("Day: " + todate.getDay() + '<br/>')
+            document.write("Full Year: " + todate.getFullYear() + "<br/>")
+            document.write("Hour: " + todate.getHours() + "<br/>")
+            document.write("Millisecond: " + todate.getMilliseconds() + "<br/>")
+            document.write("Minutes: " + todate.getMinutes() + "<br/>")
+            document.write("Month: " + todate.getMonth() + "<br/>") 
+            document.write("Seconds: " + todate.getSeconds() + "<br/>")
+            document.write("Time: " + todate.getTime() + "<br/>")
+            document.write("TImeZoneOffset: " + todate.getTimezoneOffset() + "<br/>")
+        </script>
+        <br/>
+        <script>
+            var todate = new Date()
+            document.write("UtcDate: " + todate.getUTCDate() + "<br/>")
+            document.write("UtcDay: " + todate.getUTCDay() + "</br/>")
+            document.write("UtcFullYear: " + todate.getUTCFullYear() + "<br/>")
+            document.write("UtcHour: " + todate.getUTCHours() + "<br/>")
+            document.write("UtcMillisecond: " + todate.getUTCMilliseconds() + "<br/>")
+            document.write("UtcMinutes: " + todate.getUTCMinutes() + "<br/>")
+            document.write("UtcMonth: " + todate.getUTCMonth() + "<br/>")
+            document.write("UtcSeconds: " + todate.getUTCSeconds() + "<br/>")           
+        </script>
+        <br/>
+        <script>
+            var tdt = new Date( "April 15, 2005 12:30:47" );
+            tdt.setDate( 17 )
+            document.write( tdt + "<br/>")
+
+            tdt.setFullYear(2006)
+            document.write(tdt + "<br/>")
+
+            tdt.setHours(19)
+            document.write(tdt + "<br/>")
+
+            tdt.setMilliseconds(332)
+            document.write(tdt + "<br/>")
+
+            tdt.setMinutes(38)
+            document.write(tdt + "<br/>")
+
+            tdt.setMonth(6)
+            document.write(tdt + "<br/>")
+
+            tdt.setSeconds(29)
+            document.write(tdt + "<br/>")
+
+            tdt.setTime(4999993993)
+            document.write(tdt + "<br/>")
+        </script>
+        <br/>
+        <script>
+            var tdt = new Date("February 14, 2038 23:59:59")
+            tdt.setUTCDate(16)
+            document.write(tdt + "<br/>")
+
+            tdt.setUTCFullYear(3067)
+            document.write(tdt + "<br/>")
+
+            tdt.setUTCHours(23)
+            document.write(tdt + "<br/>")
+
+            tdt.setUTCMilliseconds(1872)
+            document.write(tdt + "<br/>")
+
+            tdt.setUTCMinutes(59)
+            document.write(tdt +'<br/>')
+
+            tdt.setUTCMonth(11)
+            document.write(tdt + "<br/>")
+
+            tdt.setUTCSeconds(49)
+            document.write(tdt + "<br/>")
+        </script>
+        <br/>
+        <script>
+            var t = new Date(2023, 6, 8, 23, 7);
+            document.write("Format: " + t.toDateString() + "<br/>")
+            document.write("Format: " + t.toGMTString() + "<br/>")
+            document.write("Format: " + t.toLocaleDateString() + "</br>")
+            document.write("Format: " + t.toLocaleString() + "</br>")
+            document.write("Format: " + t.toLocaleTimeString() + "<br/>" )
+            document.write("Format: " + t.toUTCString() + "<br/>")
+            document.write("Format: " + t.toISOString() + "<br/>")
+            document.write("Format: " + t.toString() + "<br/>")
+            document.write("Value Of: " + t.valueOf() + "<br/>")
+        </script>
+    </body>
+</html>

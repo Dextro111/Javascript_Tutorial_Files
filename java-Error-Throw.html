@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> ERROR THROW</title>
+        <script type="text/javascript">
+            function myFunc()
+            {
+               var a = 100;
+               var b = 0;
+               
+               try{
+                if (b == 0){
+                    throw( "Divide by Zero Error. ")
+                }else {
+                    var c = a/b;
+                }
+               }catch (e) {
+                document.write("Error: " + e )
+               }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Show Error" onclick="myFunc()">
+    </body>
+</html>

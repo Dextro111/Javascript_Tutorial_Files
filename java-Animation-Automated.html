@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Automated Animation</title>
+        <script type="text/javascript">
+            var imgObj = null;
+            var animate ;
+            function init(){
+                imgObj = document.getElementById('myImage');
+                imgObj.style.position = 'relative';
+                imgObj.style.left = '0px';
+            }
+            function moveRight(){
+                imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+                animate = setTimeout(moveRight,60); //Moveright in 60msecs
+            }
+            function stop(){
+                clearTimeout(animate);
+                imgObj.style.left = '10px';
+            }
+            window.onload = init;
+        </script>
+    </head>
+    <body>
+        <form>
+            <img id="myImage" src="/images/html.gif" />
+            <input type="button" value="Start Anime" onclick="moveRight();" />
+            <input type="button" value="Stop" onclick="stop();" />
+        </form>
+    </body>
+</html>

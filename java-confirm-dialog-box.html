@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript">
+        function Confirmation(){
+            var human = confirm("ARE YOU HUMAN ?");
+            if( human == true){
+                document.write("VERIFIED YOU ARE FROM EARTH!");
+                return;
+            }
+            else{
+                document.write("VERIFIED YOU ARE AN ALIEN!");
+                return;
+            }   
+        }
+    </script>
+    <body style="background-color: grey ; ">
+        <h1 style="text-align: center;">USAGE OF THE CONFIRM DIALOG BOX</h1>
+        <p style="font-family: 'Times New Roman', Times, serif;">CLICK THE BUTTON BELOW TO ANSWER </p>
+        <br/>
+        <input type="button" value="ANSWER ME" onclick="Confirmation()">
+        
+    </body>
+</html>
